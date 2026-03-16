@@ -46,4 +46,4 @@ function displayWeather(data) {
 }
 
 // Call the function when page loads
-getWeather('Gudalur');
+getWeather('New York');  // You can change this to any city you like
