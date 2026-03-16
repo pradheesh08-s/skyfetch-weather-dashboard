@@ -20,6 +20,5 @@ All display correct weather data.
 
 ## Screenshots
 <img width="946" height="522" alt="Screenshot 2026-03-16 220312" src="https://github.com/user-attachments/assets/9ccedeeb-d8cf-4335-b990-a76d05fcf6a4" />
-<img width="946" height="522" alt="Screenshot 2026-03-16 220312" src="https://github.com/user-attachments/assets/9ccedeeb-d8cf-4335-b990-a76d05fcf6a4" />
 
 
