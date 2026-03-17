@@ -20,7 +20,7 @@ body {
     border-radius: 20px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     text-align: center;
-    max-width: 500px;
+    max-width: 900px;
     width: 100%;
 }
 
@@ -163,6 +163,54 @@ h1 {
     height: 100px;
 }
 
+.current-weather {
+    margin-bottom: 22px;
+}
+
+.forecast-title {
+    color: #2f3c68;
+    margin-bottom: 16px;
+    font-size: 1.25rem;
+}
+
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 12px;
+}
+
+.forecast-card {
+    background: #f3f6ff;
+    border: 1px solid #e2e8ff;
+    border-radius: 14px;
+    padding: 12px 10px;
+}
+
+.forecast-day {
+    color: #2f3c68;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.forecast-icon {
+    width: 64px;
+    height: 64px;
+}
+
+.forecast-temp {
+    color: #334;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.forecast-description {
+    color: #586074;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    line-height: 1.25;
+}
+
 @media (max-width: 560px) {
     .container {
         padding: 30px 20px;
@@ -182,5 +230,15 @@ h1 {
 
     .status-message {
         text-align: center;
+    }
+
+    .forecast-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 380px) {
+    .forecast-grid {
+        grid-template-columns: 1fr;
     }
 }
