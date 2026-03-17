@@ -25,6 +25,15 @@
         </form>
 
         <p id="status-message" class="status-message" aria-live="polite"></p>
+
+        <section class="recent-searches-section" aria-label="Recent city searches">
+            <div class="recent-searches-header">
+                <h2 class="recent-searches-title">Recent Searches</h2>
+                <button type="button" id="clear-recent-btn" class="clear-recent-btn">Clear</button>
+            </div>
+            <p class="recent-searches-hint">Shortcut: Ctrl + Alt + 1-6 to search saved cities.</p>
+            <div id="recent-searches" class="recent-searches" aria-live="polite"></div>
+        </section>
         
         <div id="weather-display">
             <p class="loading">Search for a city to see the weather.</p>
