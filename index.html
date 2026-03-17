@@ -10,16 +10,27 @@
     <div class="container">
         <h1>🌤️ SkyFetch</h1>
         <p class="tagline">Your Personal Weather Dashboard</p>
+
+        <form id="weather-form" class="search-form" novalidate>
+            <label for="city-input" class="sr-only">City name</label>
+            <input
+                type="text"
+                id="city-input"
+                name="city"
+                placeholder="Enter a city name"
+                autocomplete="off"
+                required
+            >
+            <button type="submit" id="search-btn">Search</button>
+        </form>
+
+        <p id="status-message" class="status-message" aria-live="polite"></p>
         
         <div id="weather-display">
-            <p class="loading">Loading weather data...</p>
+            <p class="loading">Search for a city to see the weather.</p>
         </div>
     </div>
-
-    <!-- Axios CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     
-    <!-- Your JavaScript -->
     <script src="app.js"></script>
 </body>
 </html>
